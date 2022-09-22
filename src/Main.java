@@ -13,27 +13,25 @@ public class Main {
         // System.out.println(round(result1));
         System.out.println(reverseSign(a1));
 
-    }
-
         //Ejercicio5
 
         IntArrayList obj = new IntArrayList();
-            for (int i=1; i<11; i++){
-                obj.add(i);
-            }
+        for (int i = 1; i < 11; i++) {
+            obj.add(i);
+        }
+        obj.get(7);
 
-            for(int i: obj.getNumList()){
-                System.out.println(i);
-            }
-            System.out.println(obj.get(8));
+    }
 
 
-    private static double round (BigDecimal x) {
+    private static double round(BigDecimal x) {
 
         return x.setScale(2, RoundingMode.CEILING).doubleValue();
     }
-    private static double reverseSign (BigDecimal x) {
+
+    private static double reverseSign(BigDecimal x) {
 
         return x.setScale(1, RoundingMode.CEILING).negate().doubleValue();
     }
+}
 

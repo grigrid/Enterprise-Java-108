@@ -17,11 +17,11 @@ public class IntArrayList implements IntList{
             arr2[arr.length]=number;
             counter++;
         }
-
+        arr=arr2;
 }
 
     @Override
     public int get(int index) {
-        return 0;
+        return arr[index];
     }
 }
